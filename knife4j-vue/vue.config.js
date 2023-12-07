@@ -27,11 +27,12 @@ module.exports = {
     },
     proxy: {
       "/": {
-        target: 'http://localhost:8990/',
-        //target: 'http://localhost:17813',
-        /* target: 'http://knife4j.xiaominfo.com/', */
+        target: 'http://localhost:5555/yunai-api',
         ws: true,
-        changeOrigin: true
+        changeOrigin: true,
+        pathRewrite: {
+          '^/yunai-api': '/'
+        }
       }
     }
   },

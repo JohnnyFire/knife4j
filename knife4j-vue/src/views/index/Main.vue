@@ -11,72 +11,75 @@
         <div class="description">
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.description')"></h3>
+              <h4 v-html="$t('homePage.description')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.description" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.description" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.author')"></h3>
+              <h4 v-html="$t('homePage.author')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.contact" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.contact" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.version')"></h3>
+              <h4 v-html="$t('homePage.version')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.version" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.version" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.host')"></h3>
+              <h4 v-html="$t('homePage.host')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.host" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.host" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.basePath')"></h3>
+              <h4 v-html="$t('homePage.basePath')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.basePath" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.basePath" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.serviceUrl')"></h3>
+              <h4 v-html="$t('homePage.serviceUrl')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.termsOfService" /></a-col>
+            <a-col :span="15">
+              <a :href="swaggerCurrentInstance.termsOfService" target="_blank">{{ swaggerCurrentInstance.termsOfService }}</a>
+              <!-- <span v-html="swaggerCurrentInstance.termsOfService" /> -->
+            </a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.groupName')"></h3>
+              <h4 v-html="$t('homePage.groupName')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.name" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.name" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.groupUrl')"></h3>
+              <h4 v-html="$t('homePage.groupUrl')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.url" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.url" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.groupLocation')"></h3>
+              <h4 v-html="$t('homePage.groupLocation')"></h4>
             </a-col>
-            <a-col :span="19"><span v-html="swaggerCurrentInstance.location" /></a-col>
+            <a-col :span="15"><span v-html="swaggerCurrentInstance.location" /></a-col>
           </a-row>
           <a-divider class="divider" />
           <a-row class="content-line">
             <a-col :span="5">
-              <h3 v-html="$t('homePage.apiCountNumber')"></h3>
+              <h4 v-html="$t('homePage.apiCountNumber')"></h4>
             </a-col>
-            <a-col :span="19">
+            <a-col :span="15">
               <a-row class="content-line-count" v-for="param in swaggerCurrentInstance.pathArrs" :key="param.method">
                 <a-col :span="3">
                   {{ param.method }}

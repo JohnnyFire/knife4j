@@ -237,7 +237,7 @@
             </a-tab-pane>
             <a-tab-pane v-if="enableAfterScript" key="3" tab="AfterScript">
               <a-row style="height:25px;line-height:25px;">
-                关于AfterScript更详细的使用方法及介绍,请<a href="https://gitee.com/xiaoym/knife4j/wikis/AfterScript"
+                关于AfterScript更详细的使用方法及介绍,请<a href="https://wiki.yunai.org/display/ApiDoc/AfterScript"
                   target="_blank">参考文档</a>
               </a-row>
               <a-row>
