@@ -8,7 +8,7 @@
         <a-icon type="copyright" /> 2018-2024 芸爱科技（深圳）有限公司 
       </div>
       <div class="copyright1">
-        粤ICP备18021055号-2，关于具体使用条款，<a target="_blank" style="color: red;" href="https://wiki.yunai.org">点我了解更多</a>
+        粤ICP备2023147422号，关于具体使用条款，<a target="_blank" style="color: red;" href="https://wiki.yunai.org/display/ApiDoc/API+Doc+Home">点我了解更多</a>
       </div>
     </a-row>
   </div>
